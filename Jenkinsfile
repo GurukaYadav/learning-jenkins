@@ -40,13 +40,13 @@
 pipeline {
   agent any
   environment {
-    URL=avinash.guruka.com
+    avinash_URL=avinash.guruka.com
   }
 
   stages {
     steps {
-      sh 'echo "${URL}"'
-      echo URL
+      sh 'echo "${avinash_URL}"'
+      echo avinash_URL
     }
   }
 
