@@ -28,7 +28,10 @@ pipeline {
 	  unstable {
 	    echo "This is not stable"
 	  }
+	  cleanup {
+	    echo "This is Guruka Avinash"
+	  }
 	}
-
+	
 }
 
