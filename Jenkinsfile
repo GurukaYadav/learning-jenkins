@@ -35,7 +35,7 @@
 //
 // }
 
-Environment directive:
+// Environment directive:
 
 pipeline {
   agent any
