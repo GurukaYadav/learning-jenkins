@@ -9,15 +9,15 @@ pipeline {
 	    }
 	  }
 
-	  stage('Avinash'){
+	  stage('Arun'){
        steps {
-    	  echo 'This is Avinash'
+    	  echo 'This is Arun'
     	 }
     }
 
-    stage('Avinash'){
+    stage('Anusha'){
        steps {
-        echo 'This is Avinash'
+        echo 'This is Anusha'
        }
     }
 	}
