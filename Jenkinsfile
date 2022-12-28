@@ -21,5 +21,14 @@ pipeline {
        }
     }
 	}
+	post {
+	  changed {
+	    echo "This is changed"
+	  }
+	  unstable {
+	    echo "This is not stable"
+	  }
+	}
 
 }
+
