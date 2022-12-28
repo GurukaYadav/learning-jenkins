@@ -40,7 +40,7 @@
 pipeline {
   agent any
   environment {
-    avinash_URL=avinash.guruka.com
+    avinash_URL='avinash.guruka.com'
   }
 
   stages {
