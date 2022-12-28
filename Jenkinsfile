@@ -40,13 +40,13 @@
 pipeline {
   agent any
   environment {
-    MYSQL=RoboShop@1
+    URL=avinash.guruka.com
   }
 
   stages {
     steps {
-      sh 'echo "${MYSQL}"'
-      echo MYSQL
+      sh 'echo "${URL}"'
+      echo URL
     }
   }
 
