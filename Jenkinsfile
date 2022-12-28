@@ -44,7 +44,7 @@ pipeline {
   }
 
   stages {
-    stage(yadav) {
+    stage(avinash_URL) {
       steps {
         sh 'echo "${avinash_URL}"'
         echo avinash_URL
