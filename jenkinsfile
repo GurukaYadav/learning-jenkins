@@ -1,0 +1,25 @@
+pipeline {
+	agent any
+
+	stages{
+
+	  stage('Avinash'){
+      steps('Avinash'){
+	      echo 'This is Avinash'
+	    }
+	  }
+
+	  stage('Avinash'){
+       steps('Avinash'){
+    	  echo 'This is Avinash'
+    	  }
+    }
+
+    stage('Avinash'){
+       steps('Avinash'){
+        echo 'This is Avinash'
+        }
+    }
+	}
+	
+}
