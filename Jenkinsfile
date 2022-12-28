@@ -65,6 +65,7 @@ pipeline {
         echo avinash_URL
         echo SSH
         echo person
+        sh 'echo "${person}"
       }
     }
   }
