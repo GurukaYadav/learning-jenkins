@@ -99,6 +99,9 @@ pipeline {
       }
     }
     stage('Sequential-arun') {
+      when {
+        branch 'main'
+      }
       steps {
         echo "This is Guruka Arun yadav"
       }
