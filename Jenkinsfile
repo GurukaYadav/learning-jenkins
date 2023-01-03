@@ -127,9 +127,14 @@
 // }
 
 
+// @Library('jenkins-shared-library@main') _
+//
+// log.info 'Starting'
+// log.warning 'Nothing to do!'
+
+
 @Library('jenkins-shared-library@main') _
 
-log.info 'Starting'
-log.warning 'Nothing to do!'
+log("Yadav")
 
 
