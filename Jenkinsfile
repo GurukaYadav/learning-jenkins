@@ -99,9 +99,6 @@ pipeline {
       }
     }
     stage('Sequential-arun') {
-      when {
-        branch 'main'
-      }
       steps {
         echo "This is Guruka Arun yadav"
       }
@@ -112,6 +109,9 @@ pipeline {
       }
     }
     stage('Parallel-stage'){
+      when {
+        branch 'main'
+      }
       parallel {
         stage('Parallel-srinivas') {
           steps {
