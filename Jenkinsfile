@@ -133,8 +133,13 @@
 // log.warning 'Nothing to do!'
 
 
+// @Library('jenkins-shared-library@main') _
+//
+// log("cart")
+
 @Library('jenkins-shared-library@main') _
 
-log("cart")
+env.COMPONENT=cart
+log()
 
 
