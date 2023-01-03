@@ -108,20 +108,20 @@ pipeline {
         echo "This is Guruka Anusha yadav"
       }
     }
-//     stage('Parallel-stage'){
-//       parallel {
-//         stage('Parallel-srinivas') {
-//           steps {
-//             echo "This is Guruka Srinivas Yadav"
-//           }
-//         }
-//         stage('Parallel-manjula') {
-//           steps {
-//             echo "This is Guruka Manjula Yadav"
-//           }
-//         }
-//       }
-//     }
+    stage('Parallel-stage'){
+      parallel {
+        stage('Parallel-srinivas') {
+          steps {
+            echo "This is Guruka Srinivas Yadav"
+          }
+        }
+        stage('Parallel-manjula') {
+          steps {
+            echo "This is Guruka Manjula Yadav"
+          }
+        }
+      }
+    }
 
   }
 }
