@@ -117,7 +117,7 @@ pipeline {
         }
         stage('Parallel-manjula') {
           steps {
-            echo "This is Guruka Manjula "
+            echo "This is Guruka MANJULA"
           }
         }
       }
