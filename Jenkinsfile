@@ -85,48 +85,56 @@
 // }
 
 
-pipeline {
-  agent any
-  options {
-    ansiColor('xterm')
-  }
+// pipeline {
+//   agent any
+//   options {
+//     ansiColor('xterm')
+//   }
+//
+//   stages {
+//
+//     stage('Sequential-avinash') {
+//       steps {
+//         echo "This is Guruka Avinash yadav"
+//       }
+//     }
+//     stage('Sequential-arun') {
+//       steps {
+//         echo "This is Guruka Arun yadav"
+//       }
+//     }
+//     stage('Sequential-anusha') {
+//       steps {
+//         echo "This is Guruka Anusha yadav"
+//       }
+//     }
+//     stage('Parallel-stage'){
+//       when {
+//         branch 'main'
+//       }
+//       parallel {
+//         stage('Parallel-srinivas') {
+//           steps {
+//             echo "This is Guruka Srinivas Yadav"
+//           }
+//         }
+//         stage('Parallel-manjula') {
+//           steps {
+//             echo "This is Guruka Manjula Yadav"
+//           }
+//         }
+//       }
+//     }
+//
+//   }
+// }
 
-  stages {
 
-    stage('Sequential-avinash') {
-      steps {
-        echo "This is Guruka Avinash yadav"
-      }
-    }
-    stage('Sequential-arun') {
-      steps {
-        echo "This is Guruka Arun yadav"
-      }
-    }
-    stage('Sequential-anusha') {
-      steps {
-        echo "This is Guruka Anusha yadav"
-      }
-    }
-    stage('Parallel-stage'){
-      when {
-        branch 'main'
-      }
-      parallel {
-        stage('Parallel-srinivas') {
-          steps {
-            echo "This is Guruka Srinivas Yadav"
-          }
-        }
-        stage('Parallel-manjula') {
-          steps {
-            echo "This is Guruka Manjula Yadav"
-          }
-        }
-      }
-    }
+@Library('jenkins-shared-library@main') _
 
-  }
-}
+log.info 'Starting'
+log.warning 'Nothing to do!'
+
+
 
 
