@@ -139,7 +139,7 @@
 
 @Library('jenkins-shared-library@main') _
 
-env.COMPONENT= "cart"
+env.COMPONENT= 'user'
 log()
 
 
